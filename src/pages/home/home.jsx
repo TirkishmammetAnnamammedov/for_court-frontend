@@ -1,7 +1,7 @@
 import React from 'react';
 import './home.scss';
 import {SearchOutlined} from '@mui/icons-material';
-import DataTable from '../../component/dataTable/dataTable,';
+import DataTable from '../../component/dataTable/dataTable';
 
 const Home = () => {
     return (

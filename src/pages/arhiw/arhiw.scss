@@ -1,11 +1,53 @@
-.arhiw{
+.arhiw {
     width: 100%;
 
-    .arhiwContainer{
+    .arhiwContainer {
         margin: 0 60px;
 
-        h2{
+        h2 {
             color: rgb(122, 122, 236);
         }
+
+        .dataFilter {
+            display: flex;
+            float: right;
+            width: max-content;
+
+            .filterBox {
+                margin: 10px 0;
+                position: relative;
+
+                .filterTop {
+                    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+                    padding: 7px 50px;
+                    background-color: #fff;
+                    color: blue;
+                    transition: 3s;
+                    cursor: pointer;
+                }
+
+                .filterList {
+                    position: absolute;
+                    z-index: 5;
+                    background-color: white;
+                    box-shadow: 1px 4px 5px rgba(0, 0, 0, .2);
+                    border: 0.5px solid lightgray;
+                    width: 100%;
+                    li {
+                        list-style-type: none;
+                        margin: 10px 5px;
+                        border-bottom: 0.5px solid lightgray;
+                        cursor: pointer;
+                    }
+                    li:hover, li:focus{
+                        color: blue;
+                    }
+                }
+                .filterList.active {
+                    
+                }
+            }
+        }
+     }
+
     }
-}

@@ -1,6 +1,6 @@
 import React from "react";
 import './bergidarlar.scss';
-import DataTable from "../../component/dataTable/dataTable,";
+import DataTable from "../../component/dataTable/dataTable";
 
 const Bergidarlar = () => {
     return(
