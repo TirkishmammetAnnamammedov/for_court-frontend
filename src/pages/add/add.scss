@@ -7,5 +7,89 @@
         h2{
             color: rgb(122, 122, 236);
         }
+
+        .addList{
+
+            .addFlexBox{
+               display: flex;
+               justify-content: space-between;
+
+               .left{
+                   display: flex;
+                   flex-direction: column;
+                   width: 60%;
+
+                   .inputs{
+                     padding: 0px 0px 15px 0px;
+                     display: flex;
+                     justify-content: space-between;
+                     
+                     input{
+                        padding: 3px;
+                        width: 65%;
+                        border: 0.5px solid green;
+                        box-shadow: 3px 1px 3px 1px rgb(171, 169, 169);
+                     }
+                     label{
+                        height: max-content;
+                        width: 20%;
+                        text-align: center;
+                        border: 1px solid blue;
+                        background-color: rgba(217, 255, 217, 0.566);
+                        padding: 5px 10px;
+                        box-shadow: 2px 1px 3px 1px rgb(171, 169, 169);
+                     }
+                   }
+
+               }
+
+               .logoBottom{
+                  height: max-content;
+                  text-align: center;
+                
+                  img{
+                    width: 100%;
+                  }
+               }
+            
+            }
+            .bottomTextArea{
+                display: flex;
+                justify-content: space-between;
+                label{
+                    height: max-content;
+                    width: 12%;
+                    text-align: center;
+                    border: 1px solid blue;
+                    background-color: rgba(217, 255, 217, 0.566);
+                    padding: 10px 10px;
+                    box-shadow: 2px 1px 3px 1px rgb(171, 169, 169);
+                }
+                textarea{
+                    padding: 3px;
+                    width: 79%;
+                    border: 0.5px solid green;
+                    box-shadow: 3px 1px 3px 1px rgb(171, 169, 169);
+                }
+
+            }
+
+            .addButton{
+                margin-top: 20px;
+
+                p{
+                    float: right; 
+                    background-color:green;
+                    color: #fff;
+                    padding: 5px 10px;
+                    box-shadow: 3px 1px 3px 1px rgb(171, 169, 169);
+                    cursor: pointer;
+                }
+                p:hover{
+                    box-shadow: 1px 2px 5px 4px rgb(171, 169, 169);
+                    color: red; 
+                }
+            }
+        }
     }
 }

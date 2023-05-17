@@ -1,58 +1,104 @@
-.home{
+.home {
     width: 100%;
 
-    .homeContainer{
+    .homeContainer {
         margin: 0px 60px;
 
-        .header-search {
+        .topSearch {
             display: flex;
             float: right;
-            height: 100%;
-            width: 30%;
-            margin-top: 30px;
-            margin-bottom: 10px;
+            width: max-content;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
 
-            .form {
-                position: relative;
-                width: 100%;
+            .header-search {
+                width: 500px;
 
-                input {
+                .form {
+                    position: relative;
                     width: 100%;
-                    font-size: 1em;
-                    padding: 0.5em;
-                    color: #999;
-                    outline: none;
-                    border: 0.5px solid rgb(121, 156, 121);
-                    background: none;
-                    -webkit-appearance: none;
-                    transition: 0.5s all;
-                    -webkit-transition: 0.5s all;
-                    -moz-transition: 0.5s all;
-                }
 
-                .btn-default {
-                    border: none;
-                    position: absolute;
-                    display: flex;
-                    align-items: center;
-                    top: 0px;
-                    right: 0px;
-                    width: 100px;
-                    height: 100%;
-                    outline: none;
-                    box-shadow: none;
-                    background: green;
-                    color: #fff;
-                    padding: 0 7px;
-                    -webkit-appearance: none;
-                    -webkit-transition: .5s all;
-                    -moz-transition: .5s all;
-                    transition: .5s all;
+                    input {
+                        width: 100%;
+                        font-size: 1em;
+                        padding: 0.5em;
+                        color: #999;
+                        outline: none;
+                        border: 0.5px solid rgb(121, 156, 121);
+                        background: none;
+                        -webkit-appearance: none;
+                        transition: 0.5s all;
+                        -webkit-transition: 0.5s all;
+                        -moz-transition: 0.5s all;
+                    }
+
+                    .btn-default {
+                        border: none;
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        top: 0px;
+                        right: 0px;
+                        width: 100px;
+                        height: 100%;
+                        outline: none;
+                        box-shadow: none;
+                        background: green;
+                        color: #fff;
+                        padding: 0 7px;
+                        -webkit-appearance: none;
+                        -webkit-transition: .5s all;
+                        -moz-transition: .5s all;
+                        transition: .5s all;
+                    }
+
+                    .searchIcon {
+                        font-size: 1.7em;
+                        color: #fff;
+                        padding: 3px;
+                    }
                 }
-                .searchIcon {
-                    font-size: 1.7em;
-                    color: #fff;
-                    padding: 3px;
+            }
+
+            .dataFilter {
+                width: max-content;
+
+                .filterBox {
+                    margin: 10px 0;
+                    position: relative;
+
+                    .filterTop {
+                        box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+                        padding: 7px 50px;
+                        background-color: #fff;
+                        color: blue;
+                        transition: 3s;
+                        cursor: pointer;
+                    }
+
+                    .filterList {
+                        position: absolute;
+                        z-index: 5;
+                        background-color: white;
+                        box-shadow: 1px 4px 5px rgba(0, 0, 0, .2);
+                        border: 0.5px solid lightgray;
+                        width: 100%;
+
+                        li {
+                            list-style-type: none;
+                            margin: 10px 5px;
+                            border-bottom: 0.5px solid lightgray;
+                            cursor: pointer;
+                        }
+
+                        li:hover,
+                        li:focus {
+                            color: blue;
+                        }
+                    }
+
+                    .filterList.active {}
                 }
             }
         }
