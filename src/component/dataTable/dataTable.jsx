@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import {Table, TableBody, TableCell, TableContainer, TableHead, 
         TableRow, Paper} from '@mui/material';
 import './dataTable.scss';
+import Modall from "../modal/modal";
 
 const DataTable = () => {
+    const [isActiveModal, setIsActiveModal] = useState(false);
     const rows = [
         {
             id: 1,
@@ -60,7 +62,10 @@ const DataTable = () => {
                 <TableRow key={row.id} className="tableRow">                 
                     <TableCell className="tableCell">{row.id}</TableCell>
                     <TableCell className="tableCell">{row.kaz}</TableCell>
-                    <TableCell className="tableCell">{row.bergidar}</TableCell>
+                    <TableCell className="tableCell">
+                       <div className="modalBtn" onClick={() => setIsActiveModal(!isActiveModal)}>{row.bergidar}</div>
+                       <Modall isActiveModal={isActiveModal} setIsActiveModal={setIsActiveModal}/> 
+                    </TableCell>
                     <TableCell className="tableCell">{row.ishi}</TableCell>
                     <TableCell className="tableCell">{row.almnt}</TableCell>
                     <TableCell className="tableCell">{row.sonky}</TableCell>

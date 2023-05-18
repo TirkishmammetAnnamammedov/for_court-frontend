@@ -1,0 +1,90 @@
+.login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .loginContainer{   
+        margin: auto;
+        width: 42%;
+        // box-shadow: 3px 1px 3px 1px rgb(171, 169, 169);
+        border-radius: 10px;
+        padding: 10px;
+
+        .top{
+            display: flex;
+            
+
+            .topLeft{
+                height: 300px;
+                width: 460px;
+                margin-left: 10px;
+
+                img{                    
+                    height: 100%;
+                    width: 100%;               
+                }
+            }
+
+            .topRight{
+                color: green;
+                text-align: right;
+
+                h1{
+                    font-size: 2.7em;
+                }
+            }
+        }
+
+        .bottom{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+
+            .inputs{
+                display: flex;
+                justify-content: space-between;
+
+                label{
+                    width: 25%;
+                    text-align: center;
+                    border: 1px solid lightgray;
+                    background-color: rgba(217, 255, 217, 0.566);
+                    padding: 5px 10px;
+                    box-shadow: 2px 1px 3px 1px rgb(171, 169, 169);
+                    margin-bottom: 10px;
+                }
+
+                input{
+                    width: 60%;
+                    border: 0.5px solid lightgray;
+                    box-shadow: 3px 1px 5px 0px rgb(171, 169, 169);
+                    margin-bottom: 10px;
+                 }
+            }
+
+            .addButton{
+                width: 100%;
+                text-align: center;
+                padding: 10px 0px;
+
+                button{
+                    background-color:green;
+                    color: #fff;
+                    width: 20%;
+                    border: none;
+                    padding: 7px 10px;
+                    box-shadow: 3px 1px 3px 1px rgb(171, 169, 169);
+                    -webkit-transition: all 0.5s ease;
+                    transition: all .5s ease-in-out;
+                    cursor: pointer;
+                }
+                button:hover{
+                    box-shadow: 1px 2px 5px 4px rgb(171, 169, 169);
+                    width: 100%;
+                    color: #FF6A00; 
+                }
+            }
+        }
+    }
+}
