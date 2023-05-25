@@ -1,52 +1,50 @@
 import React, { useState } from "react";
 import './navbar.scss';
-import logo from '../../images/logo.png';
+import logo from '../../images/logo.PNG';
 import { Link } from "react-router-dom";
 import { Logout } from "@mui/icons-material";
 
 const categories = [
    {
       id: 1,
+      main: 'Kategoriýalar',
+      onClick: 'category',
+      active: 'category'
+   },
+   {
+      id: 2,
       main: 'Baş sahypa',
       link: '/home',
       active: 'main'
    },
    {
-      id: 2,
+      id: 3,
       main: 'Täze döretmek',
       link: '/add',
       active: 'add'
    },
    {
-      id: 3,
-      main: 'Borçlylar',
-      link: '/borchlylar'
-   },
-   {
       id: 4,
-      main: 'Bergidarlar',
-      link: '/bergidarlar'
+      main: 'Borçlylar',
+      link: '/borchlylar',
+      active: 'borch'
    },
    {
       id: 5,
-      main: 'Statistika',
-      link: '/chart'
+      main: 'Bergidarlar',
+      link: '/bergidarlar',
+      active: 'bergidar'
    },
    {
       id: 6,
-      main: 'Exele öwürmek',
-      link: '/exel'
-   },
-   {
-      id: 7,
       main: 'Arhiw',
-      link: '/arhiw'
+      link: '/arhiw',
+      active: 'arhiw'
    },
    
 ]
 
 const Navbar = () => {
-   // Get date function
    const currentDateTime = new Date().toLocaleString();
    let date = JSON.stringify(currentDateTime)
    date = date.slice(1, 11)
@@ -71,13 +69,13 @@ const Navbar = () => {
          </div>
          <div className="categories">
             <div className="CtgrFlexBox">
-                {categories.map((i, j) => (
-                  <div className={active==="active" ? "ctgrData active": "ctgrData"}>
+                {categories.map((i) => (
+                  <div className={active===i.active ? "ctgrData active": "ctgrData"} key={i.id}>
                      <Link to={i.link} style={{ textDecoration: 'none', color: 'black' }}>
-                        <div className="ctgrText" onClick={()=>setActive({active})}>
+                        <div className="ctgrText" onClick={()=>setActive(i.active)}>
                            <p>{i.main}</p>
                         </div>
-                     </Link>
+                     </Link>                     
                   </div>
                ))}
             </div>

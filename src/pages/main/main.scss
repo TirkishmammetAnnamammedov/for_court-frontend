@@ -1,0 +1,74 @@
+.main {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-image: url('../../images/fon.jpg');
+  background-repeat: no-repeat;
+
+  .mainContainer {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.801);
+    display: flex;
+
+    .rightImage {
+      flex: 2;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: 550px;
+      }
+    }
+
+    .leftText {
+      flex: 2;
+      padding-left: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .textwrapper {
+
+        .p {
+          font-family: inter;
+          font-size: 70px;
+          color: #ececec;
+          width: max-content;
+        }
+
+        p {
+          color: #d9d9d9;
+          width: 85%;
+          text-align: justify;
+        }
+
+        .button {
+          margin-top: 24px;
+          .btn-one {
+            padding: 8px 48px;
+            border: none;
+            font-family: inter;
+            font-size: 18px;
+            background-color: rgb(196, 196, 196);
+            color: blue;
+            box-shadow: 0 0 5px rgba(129, 129, 129, 0.377);
+            cursor: pointer;
+            span {
+              margin: 4px 16px;
+            }
+          }
+          .btn-one:hover{
+            background-color: rgb(122, 122, 122);
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

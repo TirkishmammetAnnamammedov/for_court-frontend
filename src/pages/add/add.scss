@@ -5,7 +5,7 @@
         margin: 0 60px;
 
         h2{
-            color: rgb(122, 122, 236);
+            // color: rgb(122, 122, 236);
         }
 
         .addList{
@@ -44,7 +44,7 @@
 
                .logoBottom{
                    height: 300px;
-                   width: 350px;  
+                   width: 300px;  
                    margin-right: 5%; 
                 
                   img{
@@ -79,7 +79,7 @@
 
                 p{
                     float: right; 
-                    background-color:green;
+                    background-color: #0e7490;
                     color: #fff;
                     padding: 5px 10px;
                     box-shadow: 3px 1px 3px 1px rgb(171, 169, 169);
@@ -87,7 +87,6 @@
                 }
                 p:hover{
                     box-shadow: 1px 2px 5px 4px rgb(171, 169, 169);
-                    color: #FF6A00; 
                 }
             }
         }

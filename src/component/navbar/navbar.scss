@@ -17,7 +17,7 @@
 
         .logo {
             img {
-                width: 70px;
+                width: 55px;
                 height: 60px;
             }
         }
@@ -68,7 +68,7 @@
             transition: 1s;
             cursor: pointer;
             border: 2px solid;
-            border-color: rgb(77, 146, 77);
+            border-color: #0e7490;
             text-align: center;
             -webkit-mask:
                 conic-gradient(from 180deg at top 8px right 8px, #0000 90deg, #000 0) var(--_i, 200%) 0 /200% var(--_i, 8px) border-box no-repeat,
@@ -99,7 +99,7 @@
         }
         .active{
              p{
-                color: rgb(77, 146, 77) !important;    
+                color: #0e7490 !important;    
              }        
         }
 

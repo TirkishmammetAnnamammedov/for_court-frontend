@@ -8,16 +8,16 @@ import Add from './pages/add/add';
 import Bergidarlar from './pages/bergidarlar/bergidarlar';
 import Borchlylar from './pages/borchlylar/borchlylar';
 import Arhiw from './pages/arhiw/arhiw';
-import Exel from './pages/exel/exel';
-import Chart from './pages/chart/chart';
 import Error from './pages/error/error';
+import Main from './pages/main/main';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Main />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/*" element={<Error />} />
           <Route element={
             <>
@@ -30,8 +30,6 @@ function App() {
             <Route path="/add" element={<Add />} />
             <Route path="/borchlylar" element={<Borchlylar />} />
             <Route path="/bergidarlar" element={<Bergidarlar />} />
-            <Route path="/chart" element={<Chart />} />
-            <Route path="/exel" element={<Exel />} />
             <Route path="/arhiw" element={<Arhiw />} />
           </Route>
         </Routes>
