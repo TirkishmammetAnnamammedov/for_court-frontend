@@ -1,10 +1,12 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import './bergidarlar.scss';
 import DataTable from "../../component/dataTable/dataTable";
 import { SearchOutlined } from '@mui/icons-material';
+import { baza } from '../../data.js'
 
 const Bergidarlar = () => {
     const [isActiveModal, setIsActiveModal] = useState(false);
+    const [b] = useState([...baza]);
     return (
         <div className="brgMain">
             <div className="brgMainContainer">
@@ -35,7 +37,7 @@ const Bergidarlar = () => {
                     </div>
                 </div>
                 <div className="dataTable">
-                    <DataTable />
+                    <DataTable data={b} rowsPerPage={8} />
                 </div>
             </div>
         </div>

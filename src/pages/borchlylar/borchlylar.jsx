@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import './borchlylar.scss';
 import { SearchOutlined } from '@mui/icons-material';
 import DataTable from "../../component/dataTable/dataTable";
+import {baza} from '../../data.js'
 
 
 
 const Borchlylar = () => {
     const [isActiveModal, setIsActiveModal] = useState(false);
+    const [b] = useState([...baza]);
     return (
         <div className="borchMain">
             <div className="borchMainContainer">
@@ -37,7 +39,7 @@ const Borchlylar = () => {
                     </div>
                 </div>
                 <div className="dataTable">
-                    <DataTable />
+                  <DataTable  data={b} rowsPerPage={8} />
                 </div>
             </div>
         </div>

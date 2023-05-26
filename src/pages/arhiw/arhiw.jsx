@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import './arhiw.scss';
 import DataTable from '../../component/dataTable/dataTable'
 import { SearchOutlined } from '@mui/icons-material';
+import {baza} from '../../data.js'
 
 
 const Arhiw = () => {
     const [isActiveModal, setIsActiveModal] = useState(false);
+    const [b] = useState([...baza]);
 
     return (
         <div className="arhiw">
@@ -51,7 +53,7 @@ const Arhiw = () => {
                             2023 ýyl
                         </div>
                     </div>
-                    <DataTable />
+                      <DataTable  data={b} rowsPerPage={8} />
                 </div>
             </div>
         </div>

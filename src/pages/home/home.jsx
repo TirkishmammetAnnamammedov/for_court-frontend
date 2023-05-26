@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import './home.scss';
 import { SearchOutlined } from '@mui/icons-material';
 import DataTable from '../../component/dataTable/dataTable';
+import {baza} from '../../data.js'
 
 const Home = () => {
     const [isActiveModal, setIsActiveModal] = useState(false);
+    const [b] = useState([...baza]);
     return (
         <div className="home">
             <div className="homeContainer">
@@ -34,7 +36,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="dataTableContainer">
-                    <DataTable />
+                    <DataTable  data={b} rowsPerPage={8} />
                 </div>
             </div>
         </div>
