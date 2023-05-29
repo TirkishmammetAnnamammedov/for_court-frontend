@@ -1,6 +1,6 @@
 import React  from "react";
 import './add.scss';
-import logoBottom from '../../images/logo.PNG';
+import logoBottom from '../../images/logo.png';
 // import { DriveFolderUploadOutlined } from "@mui/icons-material";
 
 

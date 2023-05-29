@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './navbar.scss';
-import logo from '../../images/logo.PNG';
+import logo from '../../images/logo.png';
 import { Link } from "react-router-dom";
 import { Logout } from "@mui/icons-material";
 import Sidebar from "../sidebar/sidebar";
