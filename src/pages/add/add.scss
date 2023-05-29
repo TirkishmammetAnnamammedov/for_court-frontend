@@ -27,14 +27,18 @@
                      input{
                         padding: 3px;
                         width: 65%;
+                        outline: none;
                         border: 0.5px solid rgb(172, 172, 244);
                         box-shadow: 3px 1px 5px 0px rgb(171, 169, 169);
                      }
+                     input:focus{
+                        border: 1px solid rgb(118, 187, 255);
+                       }
                      label{
                         height: max-content;
                         width: 20%;
                         text-align: center;
-                        background-color: rgba(217, 255, 217, 0.566);
+                        background-color: #bbdae355;
                         padding: 5px 10px;
                         box-shadow: 2px 1px 3px 1px rgb(171, 169, 169);
                      }
@@ -61,11 +65,12 @@
                     height: max-content;
                     width: 12%;
                     text-align: center;
-                    background-color: rgba(217, 255, 217, 0.566);
+                    background-color: #bbdae355;
                     padding: 10px 10px;
                     box-shadow: 2px 1px 3px 1px rgb(171, 169, 169);
                 }
                 textarea{
+                    outline: none;
                     padding: 5px 3px;
                     width: 79%;
                     border: 0.5px solid rgb(172, 172, 244); 
@@ -79,7 +84,7 @@
 
                 p{
                     float: right; 
-                    background-color: #185adb;
+                    background-color: #2563eb;
                     color: #fff;
                     padding: 5px 10px;
                     box-shadow: 3px 1px 3px 1px rgb(171, 169, 169);

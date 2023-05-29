@@ -1,9 +1,12 @@
-import React from "react";
+import React  from "react";
 import './add.scss';
 import logoBottom from '../../images/logo.PNG';
+// import { DriveFolderUploadOutlined } from "@mui/icons-material";
 
 
 const Add = () => {
+    // const inputRef = useRef(null);
+    // const [inputs, setInputs] = useState("");
     return (
         <div className="add">
             <div className="addContainer">
@@ -18,7 +21,9 @@ const Add = () => {
 
                             <div className="inputs">
                                 <label>Ýerine ýetirýän edara</label>
-                                <input type="text" placeholder="" />
+                                <input type="text" placeholder=""/>
+                                {/* <label htmlFor="file" className="file"><DriveFolderUploadOutlined/></label>
+                                <input type="file"  style={{ display: "none" }} id="file" name="file"/> */}
                             </div>
 
                             <div className="inputs">
@@ -37,10 +42,10 @@ const Add = () => {
                             </div>
 
                             <div className="inputs">
-                                <label>Algydar</label>
-                                <input type="text" placeholder="" />
+                                <label>Algydar</label>     {/*onClick={() => setInputs(inputRef.current.value)} */}
+                               <input type="text" placeholder="" /> {/* ref={inputRef} */}
                             </div>
-
+                            {/* <p>{inputs}</p> */}
                             <div className="inputs">
                                 <label>Alimentiň moçberi</label>
                                 <input type="text" placeholder="" />

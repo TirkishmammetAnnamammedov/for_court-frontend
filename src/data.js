@@ -5,7 +5,7 @@ export const baza = [
       name2: "Jeren Myradowa",
       aliment: "Maý 25, 2023",
       job: '21.09.2023/ 12.00',
-      karar: 'Maksat Durdyýew',
+      karar: 'Berkararlyk etrap',
       bolum: 'Okuw bölümi'
     },
     {

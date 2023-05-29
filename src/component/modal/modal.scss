@@ -18,68 +18,133 @@
             position: absolute;
         }
 
-        .content {
+        .modalBox {
             position: relative;
             background-color: #fff;
             border-radius: 10px;
             margin: auto;
-            padding: 15px 25px 25px 25px;
+            padding: 25px;
             -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
             box-shadow: 4px 4px 10px 1px rgba(169, 168, 168, 0.47);
 
-            
-            h3{
-                color: blue;
-                margin: auto;
-                width: 70%;
-                text-align: center;
-             }
-
-            .modalText {
-                margin: 10px 0px;
-                
-                .flexBox{
+            .modalContainer {
+                margin-bottom: 20px;
+                .top {
                     display: flex;
-                    gap: 20px;                    
+                    justify-content: space-between;
+                    height: 160px;
 
-                    p{
-                        font-size: 18px;
+                    h3 {
+                        height: max-content;
+                        width: 50%;
+                        text-align: center;
+                        color: #114b5c;
+                    }
+
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                .flexBoxs {
+
+                    .flexBox {
+                        position: relative;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: 10px 0px;
+
+                        .head {
+                            flex: 2;
+                        }
+
+                        .text {
+                            flex: 3;
+                        }
+
+                        .right {      
+                            flex: 1;                     
+
+                            button{
+                                cursor: pointer;
+                                border:0.5px solid lightgray;
+                                padding: 4px 8px;
+                                
+                                a{
+                                    text-decoration: none;
+                                    color: #114b5c;
+                                }
+                            }
+                        }
+                    }
+
+                    .flexBox2 {
+                        display: flex;
+                        justify-content: space-between;
+                       
+
+                        .leftHead {
+                            flex: 1;
+                            padding: 5px 0px;
+                        }
+
+                        .rightName {
+                            flex: 2;
+                            width: 100%;
+
+                            .child {
+                                display: flex;
+                                justify-content: space-between;                               
+                                padding: 5px 0px;
+
+                                .text2 {}
+
+                                .right2 {
+                                    padding-right: 2px;
+
+                                    button{
+                                        cursor: pointer;
+                                        border: 0.5px solid lightgray;
+                                        padding: 4px 8px;
+
+                                        a{
+                                            text-decoration: none;
+                                            color: #114b5c;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
 
             .out {
-                border-left: 3px solid green;
-                border-right: 3px solid green;
-                border-bottom: 3px solid green;
-                background-color: rgba(217, 255, 217, 0.566);
+                border-left: 3px solid #114b5c;
+                border-right: 3px solid #114b5c;
+                border-bottom: 3px solid #114b5c;
+                background-color: #bbdae355;
                 padding: 10px 0px;
-                width: 90%;
-                margin-left: 2%;
+                width: 80%;
+                margin: auto;
                 text-align: center;
-                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
                 box-shadow: 4px 4px 10px 1px rgba(169, 168, 168, 0.47);
                 cursor: pointer;
             }
+
+            .out:hover{
+                box-shadow: 2px 4px 5px 1px rgba(130, 128, 128, 0.58);
+                color: #5d5d5d;
+            }
         }
     }
+
     .modalOut.active {
         transform: translateY(0);
     }
 }
 
-@media(max-width: 1250px){
-    .modall {
-        .modalOut{
-            .content{
-            
-                .modalText{
+@media(max-width: 1250px) {
 
-                }
-                .out{
-                    bottom: 15px;
-                }
-            }
-        }
-    }
 }
